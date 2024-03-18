@@ -74,6 +74,25 @@ tl.to('.heroImage img,.overlayImg #img2',{
 })
 }
 
+if(window.innerWidth <600){
+  tl.to('.heroImage img,.overlayImg #img2',{
+    scale  : 1,
+    x:0,
+    delay : 0.5,
+    stagger : 0.1,
+    duration : 1,
+    scrollTrigger :{
+        trigger : '#heroSection',
+        scroller :"body",
+        // markers: true,
+        scrub : 5,
+        start :"5%",
+        end:"1%"
+     }
+})
+}
+
+
 heroAnimation()
 const tl2 = gsap.timeline();
 
