@@ -210,22 +210,22 @@ font-size: 12vw;
     border-radius: 50%;
     background: #171615;
 }
-.mainElems:hover .elemContent h3{
+.mainElems:hover .left_content h3{
     color: #171615;
 }
-.mainElems:hover .elemContent p{
+.mainElems:hover .left_content p{
     color: #171615;
 }
 .mainElems:hover .right{
     color: #171615;
 }
 
-.elemContent h3{
+.left_content h3{
     font-size: 4vw;
     font-weight: normal;
     text-transform: uppercase;
 }
-.elemContent p{
+.left_content p{
     color: white;
     font-size: 1.8vw;
     font-family: serifs;
@@ -241,6 +241,19 @@ font-size: 12vw;
     height: 100%;
     top: 0;
     padding: 1vw 2vw;
+}
+.hover_elems{
+    width: 92%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background: red; */
+    align-items: center;
+}
+.left_content{
+    display: flex;
+    /* align-items: center; */
+    gap: 1.2vw;
 }
 .right h4{
     font-family: serifs;
@@ -493,6 +506,19 @@ font-size: 12vw;
     /* object-fit: cover; */
     object-position: center;
     clip-path: circle(120px at 58% 23%);
+  }
+  .overlayPlus{
+    width: 5vw;
+    height: 5vw;
+    font-size: 1.2vw;
+    background: #171615;
+    color: white;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transform: translate(-50%,-50%);
   }
   #text1 {
     position: absolute;

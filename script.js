@@ -1,4 +1,3 @@
-
 //Mouse Follower
 function mouseFollower() {
     Shery.mouseFollower({
@@ -325,8 +324,8 @@ gsap.from('#elem4 h1',{
     // markers: true,
     // pin : true,
     // scrub : 1,
-    start :"-18%",
-    end:"-21%"
+    start :"-28%",
+    end:"-30%"
   }
 })
 gsap.to('.imgWrapper img',{
@@ -358,4 +357,11 @@ gsap.to('.ploygon',{
   }
 })
 
+
+document.querySelector('.masking').addEventListener('mousemove', function(e) {
+  gsap.to('.overlayPlus',{
+    x : e.x,
+    y : e.y
+  })
+})
 
